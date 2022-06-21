@@ -1,7 +1,7 @@
 import './Inicio'
 
 
-function Inicio(props) {
+function Inicio() {
   return (
     <h1>Inicio</h1>
   );

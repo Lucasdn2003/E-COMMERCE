@@ -1,4 +1,5 @@
 import './NavBar.css';
+import Cart from './CartWidget';
 import { BiJoystick } from "react-icons/bi";
 
 
@@ -13,11 +14,12 @@ function NavBar() {
       <div className="navbar-nav mx-auto">
         <a className="nav-item nav-link active" href="./Inicio">Inicio</a>
         <a className="nav-item nav-link" href="./Productos">Productos</a>
-        <a className="nav-item nav-link" href="./Carrito">Carrito</a>
+        <a className="nav-item nav-link" href="./Carrito">Carrito <Cart/></a>
       </div>
     </div>
   </nav>
   );
 }
+
 
 export default NavBar;

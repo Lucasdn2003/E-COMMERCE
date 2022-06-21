@@ -1,9 +1,14 @@
-import './Productos'
+import './Productos.css'
 
-function Productos() {
+
+const ItemListContainer = ( {juego1, juego2, juego3} ) => { 
   return (
-    <h1>Productos</h1>
+    <section className='Catalogo'>
+      <p>{juego1}</p>
+      <p>{juego2}</p>
+      <p>{juego3}</p>
+    </section>
   );
 }
 
-export default Productos;
+export default ItemListContainer;

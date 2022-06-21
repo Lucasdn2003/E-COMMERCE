@@ -1,0 +1,12 @@
+.Catalogo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+p{
+    height: 200px;
+    width: 120px;
+    background-color: #e03e3e;
+}
