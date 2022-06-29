@@ -1,6 +1,6 @@
 import './App.css';
 import NavBar from './components/NavBar';
-import Productos from './components/Productos';
+import ItemListContainer from './components/ItemListContainer';
 
 
 
@@ -10,10 +10,9 @@ function App() {
     <div className="App">
         <NavBar/>
         <h2>Tenemos increibles ofertas</h2> 
-        <Productos
-          juego1='GTA 5'
-          juego2='ARK: Survival Evolved'
-          juego3='Elden Ring'/>
+        <ItemListContainer/>
+
+         
         
           
       
@@ -22,6 +21,10 @@ function App() {
     
   );
 }
+
+/* juego1='GTA 5'
+          juego2='ARK: Survival Evolved'
+          juego3='Elden Ring' */
 
 
 
