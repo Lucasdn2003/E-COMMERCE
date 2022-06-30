@@ -1,6 +1,9 @@
 import './App.css';
 import NavBar from './components/NavBar';
-import ItemListContainer from './components/ItemListContainer';
+import Inicio from './components/Inicio/Inicio';
+import Carrito from './components/Carrito/Carrito'
+import ItemListContainer from './components/Productos/ItemListContainer';
+import {Routes, Route} from 'react-router-dom'
 
 
 
@@ -9,14 +12,17 @@ function App() {
   return (
     <div className="App">
         <NavBar/>
-        <h2>Tenemos increibles ofertas</h2> 
-        <ItemListContainer/>
+        <hr/>
+        <Routes>
+          <Route path='/Inicio' element={ <Inicio />}></Route>
+          <Route path='/Productos' element={ <ItemListContainer/>}></Route>
+          <Route path='/Carrito' element={ <Carrito />}></Route>
+        </Routes>
 
          
         
           
-      
-        
+             
     </div>
     
   );

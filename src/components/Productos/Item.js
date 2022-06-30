@@ -1,6 +1,6 @@
 import ItemCount from "./ItemCount"
 
-function Card(props){
+function Item(props){
     return (
         <div className="card">
             <h4>{props.nombre}</h4>
@@ -11,4 +11,5 @@ function Card(props){
     )
 }
 
-export default Card
+export default Item
+

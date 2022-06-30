@@ -1,10 +1,8 @@
 import { useEffect, useState } from 'react';
+import Item from './Item';
 import './ItemListContainer.css'
-import Card from './Card';
-import './Card.css'
+import './Item.css'
 import './ItemCount'
-
-
 
 const ItemListContainer = () => { 
 
@@ -19,7 +17,7 @@ const ItemListContainer = () => {
 
   return (
     <div className='Catalogo'>
-      {info && info.map(i => <Card nombre={i.nombre} precio={i.precio}/>)}
+      {info && info.map(i => <Item nombre={i.nombre} precio={i.precio}/>)}
     </div>
   );
 }

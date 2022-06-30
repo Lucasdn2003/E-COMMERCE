@@ -1,7 +1,8 @@
 import './NavBar.css';
-import Cart from './CartWidget';
+import Cart from './Carrito/CartWidget';
 import { useState } from 'react';
 import { BiJoystick } from "react-icons/bi";
+import { Link } from 'react-router-dom';
 
 
 function NavBar() {
@@ -13,9 +14,9 @@ function NavBar() {
     </button>
     <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div className="navbar-nav mx-auto">
-        <a className="nav-item nav-link active" href="./Inicio">Inicio</a>
-        <a className="nav-item nav-link active" href="./Productos">Productos</a>
-        <a className="nav-item nav-link active" href="./Carrito">Carrito <Cart/>{useState()}</a>
+        <Link className="nav-item nav-link active" to="./Inicio">Inicio</Link>
+        <Link className="nav-item nav-link active" to="./Productos">Productos</Link>
+        <Link className="nav-item nav-link active" to="./Carrito">Carrito <Cart/>{useState()}</Link>
       </div>
     </div>
   </nav>

@@ -30,8 +30,8 @@ function ItemCount({stock}){
     return(
         <>
         <p>{num}</p>
-        <button onClick={sumar}>Sumar</button>
-        <button onClick={restar}>Restar</button>
+        <button onClick={sumar}>+</button>
+        <button onClick={restar}>-</button>
         <button onClick={onAdd}>{num > 0 ? `Comprar` : `${stock} unidades disponibles`}</button>
         </>
     )
